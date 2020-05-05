@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Special Elite", cursive;
+}
+
+.nav-container {
+  height: 5%;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+}
+
+.nav-container li {
+  list-style: none;
+  flex: 1;
+  border-right: 1px solid hsl(0, 0%, 0%);
+}
+
+.nav-container li:last-of-type {
+  border-right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: hsl(0, 0%, 0%);
+}
+
+li a:hover {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 51%);
+}
+
+.band-img {
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.5;
+  z-index: -1;
+  position: absolute;
+}
+
+.band-img img {
+  height: 100%;
+  width: 100%;
+  padding-top: 5%;
+  background-color: #000;
+}
+
+.cont {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0, 7%, 3%);
+}
+.cont p {
+  width: 50%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+h1 {
+  font-size: 3rem;
+  font-family: "Roboto Mono", monospace;
+}
+main {
+  padding: 7% 5%;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.rows {
+  display: flex;
+}
+.about-imgs,
+.rows_cont {
+  padding: 5%;
+}
+.rows_cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rows:nth-of-type(2) {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 51%);
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 1%;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.row-1-container {
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.row-1-container div {
+  border: 1px solid rgb(0, 0, 0);
+  width: 30%;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row-1-container p,
+.row-2-container p {
+  height: 3em;
+}
+h2 {
+  font-size: 3rem;
+  margin-bottom: 5%;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social div {
+  height: 5em;
+  width: 5em;
+}
+
+.social a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.social a:hover {
+  background-color: hsl(0, 0%, 51%);
+}
+
+i {
+  color: black;
+}
+i:hover {
+  color: white;
+}
