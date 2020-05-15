@@ -1,0 +1,46 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+
+    section {
+        height: 300px;
+        width: 300px;
+        text-align: center;
+
+        .shown {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: hsl(16, 100%, 50%);
+            box-shadow: black 10px 10px 5px;
+
+            .hidden {
+                width: 100%;
+                position: absolute;
+                bottom: 0px;
+                height: 0;
+                display: none;
+            }
+
+            &:hover > .hidden {
+                display: block;
+                background-color: hsl(196, 100%, 50%);
+                animation: slide 2s forwards;
+            }
+        }
+    }
+}
+@keyframes slide {
+    from {
+        height: 0;
+    }
+    to {
+        height: 50%;
+    }
+}

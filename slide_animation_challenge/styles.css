@@ -1,0 +1,66 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body section {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+}
+
+body section .shown {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #ff4400;
+  -webkit-box-shadow: black 10px 10px 5px;
+          box-shadow: black 10px 10px 5px;
+}
+
+body section .shown .hidden {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  height: 0;
+  display: none;
+}
+
+body section .shown:hover > .hidden {
+  display: block;
+  background-color: #00bbff;
+  -webkit-animation: slide 2s forwards;
+          animation: slide 2s forwards;
+}
+
+@-webkit-keyframes slide {
+  from {
+    height: 0;
+  }
+  to {
+    height: 50%;
+  }
+}
+
+@keyframes slide {
+  from {
+    height: 0;
+  }
+  to {
+    height: 50%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
