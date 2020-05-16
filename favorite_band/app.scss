@@ -1,0 +1,11 @@
+@import "partials/themes";
+@import "partials/nav";
+@import "partials/index";
+@import "partials/about";
+@import "partials/contact";
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 1%;
+}

@@ -1,0 +1,30 @@
+main {
+    padding: 7% 5%;
+    height: 100vh;
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .rows {
+            display: flex;
+
+            .about-imgs {
+                padding: 5%;
+            }
+
+            .rows_cont {
+                @extend .about-imgs;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            &:nth-of-type(2) {
+                background-color: $bg-color;
+                color: $font-on-bg-color;
+            }
+        }
+    }
+}

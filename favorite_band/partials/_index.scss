@@ -1,0 +1,29 @@
+.band-img {
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+    z-index: -1;
+    position: absolute;
+
+    img {
+        height: 100%;
+        width: 100%;
+        padding-top: 5%;
+        background-color: $bg-color;
+    }
+}
+
+.cont {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 7%, 3%);
+
+    p {
+        width: 50%;
+        font-size: $p-font;
+        line-height: 2rem;
+    }
+}

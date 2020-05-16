@@ -1,0 +1,33 @@
+nav {
+    height: 5%;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+
+    li {
+        list-style: none;
+        flex: 1;
+        border-right: 1px solid $bg-color;
+
+        &:last-of-type {
+            border-right: 0;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: $bg-color;
+
+            &:hover {
+                background-color: $bg-color;
+                color: $font-on-bg-color;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
